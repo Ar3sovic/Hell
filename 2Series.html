@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Series</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .hero {
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 3em;
+            animation: slideInDown 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        nav a:hover { background-color: #575757; }
+        .container { display: flex; flex-wrap: wrap; padding: 20px 0; }
+        .container:nth-child(even) { flex-direction: row-reverse; }
+        .image { flex: 1; min-width: 400px; max-width: 800px; }
+        .image img { width: 90%; height: auto; }
+        .text { flex: 1; min-width: 300px; max-width: 600px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW</h1>
+        <h2>2 Series</h2>
+    </header>
+    <nav>
+        <a href="HlavniStranka.html">Home</a>
+        <a href="#First generation">First generation (2014-2021)</a>
+        <a href="#Second generation">Second generation (2021-present)</a>
+    </nav>
+    <div class="hero">
+        <h1>Fun and versatile.</h1>
+    </div>
+<main>
+    <section id="First generation">
+        <section class="container">
+            <div class="image">
+                <img src="https://s1.cdn.autoevolution.com/images/gallery/BMW-2-Series-Convertible-5289_37.jpg">
+            </div>
+            <div class="text">
+                <h2>BMW 2 Series Convertible 2014-2017</h2>
+                <h4>The BMW 2 Series is the only premium compact convertible on the market. Introduced in 2014, it gained an open-top version, adding a soft-top, some weight, and extra charm.</h4>
+                <p>The BMW 2 Series convertible has a seven-layer soft top that improves soundproofing and insulation, taking 20 seconds to retract. It looks good with the roof up, unlike some convertibles.</p>
+                <p>Inside, it features the iDrive and navigation system, but the rear seats are cramped, suitable mainly for children. Installing the rear wind deflector eliminates the rear seats entirely.</p>
+                <p>It offers a range of gasoline and diesel engines, paired with either a 6-speed manual or an 8-speed automatic transmission. The top model, the M235i, has a 326 hp twin-scroll turbo engine.</p>
+                <p>The 2 Series convertible is designed for enjoyable open-air driving, allowing for conversation with the windows up and the top down, though this likely applies to the front seats.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="image">
+                <img src="https://s1.cdn.autoevolution.com/images/gallery/BMW-2-Series--F22--LCI-6004_15.jpg">
+            </div>
+            <div class="text">
+                <h2>2017 BMW 2 Series</h2>
+                <h4>BMW introduced a facelifted version of the 2 Series in 2017, updating the design and revising the engine lineup after four years on the market.</h4>
+                <p>After the 1 Series' success in 2004, BMW created the 2 Series as a sportier, less practical two-door coupe or convertible.</p>
+                <p>In 2017, the 2 Series received a facelift with new bi-LED headlights, hexagonal daytime running lights, updated side skirts, and L-shaped LED taillights. The interior featured fabric or leather sports seats, an analog instrument cluster, and an 8.8” infotainment screen with iDrive. The updated system included an integrated SIM card for BMW ConnectedDrive, real-time traffic info, and Apple CarPlay. The rear seats were small, and the trunk had 390 liters of storage.</p>
+                <p>BMW offered seven turbocharged engines, both gasoline and diesel, with three, four, or six cylinders, paired with six-speed manuals or eight-speed automatics. Some models were only available with automatic transmissions. Customers could choose between rear-wheel or all-wheel drive.</p>
+            </div>
+        </section>
+    </section>
+    <section id="Second generation">
+        <section class="container">
+            <div class="image">
+                <img src="https://s1.cdn.autoevolution.com/images/models/BMW_2-Series-Coupe-2021_main.jpg">
+            </div>
+            <div class="text">
+                <h2>BMW 2 Series Coupe (G42) 2021-Present</h2>
+                <h4>BMW unveiled the 2022 2 Series Coupe at the 2021 Goodwood Festival of Speed. Unlike its front-wheel-drive hatchback sibling, the two-door version retained the traditional rear-wheel-drive system.</h4>
+                <p>When BMW updated its naming system, it assigned even numbers to coupes and odd numbers to four or five-door models, turning the 1 Series Coupe into the 2 Series, which retained the RWD or AWD system.</p>
+                <p>The 2 Series had a flat, broad grille, slim LED headlights with aggressive daytime running lights, and wider fenders for tires up to 255/35 R 19 at the rear and 225/40 R 19 at the front.</p>
+                <p>Inside, it featured modern tech like Android Auto and Apple CarPlay, an 8.8" touch-screen infotainment display (optional 10.25"), and a 12.3" digital instrument cluster. The 2 Series Coupe had front bucket seats and a rear bench for two, suitable for short trips, with a 390-liter trunk.</p>
+                <p>Engine options included gasoline and turbo-diesel, with two inline-four engines (one gasoline, one turbo-diesel) and a turbocharged inline-six.</p>
+            </div>
+        </section>
+    </section>
+</main>
+</body>
+</html>

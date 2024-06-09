@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Series</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .gens {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .gen {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gen:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .gen img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .gen button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .gen button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW</h1>
+        <h2>6 Series</h2>
+    </header>
+    <nav>
+        <a href="HlavniStranka.html">Home</a>
+    </nav>
+</body>
+</html>

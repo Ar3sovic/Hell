@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Series</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .gens {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .gen {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gen:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .gen img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .gen button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .gen button:hover {
+            background-color: #444;
+        }
+        .hero {
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 3em;
+            animation: slideInDown 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .container {
+            overflow: hidden; 
+        }
+
+        .text {
+            float: left; 
+            min-width: 300px;
+            max-width: 600px; 
+            padding: 20px;
+        }
+
+        .image {
+            float: right; 
+            min-width: 400px;
+            max-width: 800px; 
+        }
+
+        .image img {
+            max-width: 90%;
+            height: auto;
+        }
+        .container2 {
+            overflow: hidden; 
+        }
+
+        .text2 {
+            float: left; 
+            min-width: 300px;
+            max-width: 600px; 
+            padding: 20px;
+        }
+
+        .image2 {
+            float: right; 
+            min-width: 400px;
+            max-width: 800px; 
+        }
+
+        .image2 img {
+            max-width: 90%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW</h1>
+        <h2>3 Series</h2>
+    </header>
+    <nav>
+        <a href="HlavniStranka.html">Home</a>
+        <a href="#First generation">First generation</a>
+    </nav>
+    <div class="hero">
+        <h1>Iconic and balanced.</h1>
+    </div>
+<main>
+    <section id="First generation">
+
+    </section>
+</main>
+</body>
+</html>

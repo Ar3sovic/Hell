@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Official Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 {
+            font-size: 3em;
+            animation: slideInDown 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .content {
+            padding: 20px;
+        }
+        .models {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .model {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .model:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .model img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .model button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .model button:hover {
+            background-color: #444;
+        }
+        .about, .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .about h2, .contact h2 {
+            text-align: center;
+        }
+        .services {
+            background-color: #eee;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .services h2 {
+            text-align: center;
+        }
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+        }
+        .gallery {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .gallery h2 {
+            text-align: center;
+        }
+        .gallery-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form div {
+            margin-bottom: 15px;
+        }
+        .contact form label {
+            display: block;
+        }
+        .contact form input, .contact form textarea {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #444;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BMW</h1>
+        <p>The Ultimate Driving Machine</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#models">Models</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Welcome to BMW</h1>
+    </div>
+
+    <div class="content">
+        <section id="models">
+            <h2>Our Models</h2>
+            <div class="models">
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/news/bmw-increases-prices-on-us-sold-models-2883_1.JPG" alt="BMW 1 Series">
+                    <h3>BMW 1 Series</h3>
+                    <p>Compact and agile, perfect for urban driving.</p>
+                    <button onclick="window.location.href='1Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_2-Series-Gran-Coupe-2019_main.jpg" alt="BMW 2 Series">
+                    <h3>BMW 2 Series</h3>
+                    <p>Fun and versatile, available as coupe, convertible and Grand Coupe.</p>
+                    <button onclick="window.location.href='2Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images-webp/news/this-1983-bmw-320i-could-be-the-perfect-winter-project-207941-7.jpg.webp" alt="BMW 3 Series">
+                    <h3>BMW 3 Series</h3>
+                    <p>Iconic and balanced, blending performance, luxury and practicality.</p>
+                    <button onclick="window.location.href='3Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_4-Series-Convertible-2024_main.jpg" alt="BMW 4 Series">
+                    <h3>BMW 4 Series</h3>
+                    <p>Sporty elegance in a coupe and convertible forms.</p>
+                    <button onclick="window.location.href='4Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_5-Series-2023_main.jpg" alt="BMW 5 Series">
+                    <h3>BMW 5 Series</h3>
+                    <p>Executive sophistication with high luxury and technology.</p>
+                    <button onclick="window.location.href='5Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images-webp/news/this-one-of-55-1972-bmw-30-csl-is-a-super-rare-time-capsule-231589-7.jpg.webp" alt="BMW 6 Series">
+                    <h3>BMW 6 Series</h3>
+                    <p>Grnad touring luxury focused on comfort and style</p>
+                    <button onclick="window.location.href='6Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images-webp/news/let-s-take-a-break-from-evs-and-remember-bmw-s-insane-v16-powered-e32-concept-212445-7.jpg.webp" alt="BMW 7 Series">
+                    <h3>BMW 7 Series</h3>
+                    <p>Ultimate luxury sedan with top-tier comfort innovation.</p>
+                    <button onclick="window.location.href='7Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_8-Series-Convertible-2022_main.jpg" alt="BMW 8 Series">
+                    <h3>BMW 8 Series</h3>
+                    <p>High-end luxury and prrformance in coupe, convertible and Grand Coupe.</p>
+                    <button onclick="window.location.href='8Series.html'">Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_X5-2023_main.jpg" alt="BMW X Series">
+                    <h3>BMW X Series</h3>
+                    <p>Versatile SUVs blending luxury, performance and practicality across various sizes.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_iX-M60-2022_main.jpg" alt="BMW i Series">
+                    <h3>BMW i Series</h3>
+                    <p>Innovative electric vehicles focused on sustainability and cutting/edge technology.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="model">
+                    <img src="https://s1.cdn.autoevolution.com/images/models/BMW_M8-Convertible--2022_main.jpg" alt="BMW M Series">
+                    <h3>BMW M Series</h3>
+                    <p>High-performance variants of standard models, delivering track-ready power and precision.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>BMW is a German multinational company that produces luxury vehicles and motorcycles. The company was founded in 1916 and has its headquarters in Munich, Germany. BMW is known for its performance, innovation, and quality, and it is one of the best-selling luxury automakers in the world.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Maintenance</h3>
+                    <p>Professional maintenance services to keep your BMW running smoothly.</p>
+                </div>
+                <div class="service">
+                    <h3>Financing</h3>
+                    <p>Flexible financing options to make owning a BMW more accessible.</p>
+                </div>
+                <div class="service">
+                    <h3>Warranty</h3>
+                    <p>Comprehensive warranty packages for peace of mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="https://www.bmwusa.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/desktop/MModels.png" alt="BMW Image 1">
+                <img src="https://www.bmwusa.com/content/dam/bmwusa/3-Series/Sedan/2021/Overview/2021-bmw-3-series-330i-m-sport-package-desktop.jpg" alt="BMW Image 2">
+                <img src="https://www.bmwusa.com/content/dam/bmwusa/4-Series/Coupe/2021/Overview/2021-bmw-4-series-430i-m-sport-package-desktop.jpg" alt="BMW Image 3">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BMW. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
